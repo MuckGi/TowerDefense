@@ -4964,8 +4964,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   towerTemplate: {fileID: 11400000, guid: 4e9fd174c1681e4498a45d0b60dc7587, type: 2}
   spawnPoint: {fileID: 0}
-  weaponType: 3
+  weaponType: 9
   projectilePrefab: {fileID: 0}
+  multyProjectilePrefab: {fileID: 0}
+  multySpawnPoints: []
+  boomerangTemplate: {fileID: 0}
+  boomerangSpawnPoint: {fileID: 0}
   lineRenderer: {fileID: 0}
   hitEffect: {fileID: 0}
   targetLayer:

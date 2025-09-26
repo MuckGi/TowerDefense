@@ -16,6 +16,7 @@ public class TowerTemplate : ScriptableObject
         public float damage;
         public float slow;
         public float buff;
+        public float bank;
         public float rate;
         public float range;
         public int cost;

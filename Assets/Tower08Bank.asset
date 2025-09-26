@@ -14,4 +14,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   towerPrefab: {fileID: 0}
   followTowerPrefab: {fileID: 0}
-  weapon: []
+  weapon:
+  - sprite: {fileID: 0}
+    damage: 0
+    slow: 0
+    buff: 0
+    bank: 0
+    rate: 0
+    range: 0
+    cost: 0
+    sell: 0
+  - sprite: {fileID: 0}
+    damage: 0
+    slow: 0
+    buff: 0
+    bank: 0
+    rate: 0
+    range: 0
+    cost: 0
+    sell: 0
+  - sprite: {fileID: 0}
+    damage: 0
+    slow: 0
+    buff: 0
+    bank: 0
+    rate: 0
+    range: 0
+    cost: 0
+    sell: 0

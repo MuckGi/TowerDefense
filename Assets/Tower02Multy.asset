@@ -12,30 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 883f292bc8261294aa50987a9dcc7cc3, type: 3}
   m_Name: Tower02Multy
   m_EditorClassIdentifier: 
-  towerPrefab: {fileID: 0}
-  followTowerPrefab: {fileID: 0}
+  towerPrefab: {fileID: 4140470308764427502, guid: 6af37317f8a896348827a3a8c0625302, type: 3}
+  followTowerPrefab: {fileID: 1464258095567835800, guid: cf73c11ebf4a2004d8a8258e2561d1b3, type: 3}
   weapon:
   - sprite: {fileID: 21300000, guid: e52b9ff38425e9b43aff51f2cae1719d, type: 3}
     damage: 1.5
     slow: 0
     buff: 0
+    bank: 0
     rate: 0
     range: 0
     cost: 70
-    sell: 0
+    sell: 35
   - sprite: {fileID: 21300000, guid: 14aef7381149879408f6a80c74186088, type: 3}
     damage: 2.5
     slow: 0
     buff: 0
+    bank: 0
     rate: 0
     range: 0
     cost: 90
-    sell: 0
+    sell: 65
   - sprite: {fileID: 21300000, guid: dc2ea12f218e5264fb07e2dafe4f0c6f, type: 3}
     damage: 4
     slow: 0
     buff: 0
+    bank: 0
     rate: 0
     range: 0
     cost: 150
-    sell: 0
+    sell: 130

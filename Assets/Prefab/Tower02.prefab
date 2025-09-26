@@ -60,7 +60,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2699876548629758416}
@@ -108,7 +108,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: e52b9ff38425e9b43aff51f2cae1719d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -134,20 +134,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   towerTemplate: {fileID: 11400000, guid: ceda0405c0ae23b48972be1defc4f674, type: 2}
   spawnPoint: {fileID: 0}
-  weaponType: 5
+  weaponType: 1
   projectilePrefab: {fileID: 0}
-  lineRenderer: {fileID: 0}
-  hitEffect: {fileID: 0}
-  targetLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  boomerangTemplate: {fileID: 0}
-  boomerangSpawnPoint: {fileID: 0}
   multyProjectilePrefab: {fileID: 8886082234451299795, guid: 6773663ce01b87040a38d585459ee2a7, type: 3}
   multySpawnPoints:
   - {fileID: 2699876548629758416}
   - {fileID: 6042652773639731588}
   - {fileID: 8990390143456858422}
+  boomerangTemplate: {fileID: 0}
+  boomerangSpawnPoint: {fileID: 0}
+  lineRenderer: {fileID: 0}
+  hitEffect: {fileID: 0}
+  targetLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!65 &4778312631404880454
 BoxCollider:
   m_ObjectHideFlags: 0

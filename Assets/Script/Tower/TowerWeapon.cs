@@ -1,8 +1,9 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
-public enum WeaponType { Cannon = 0, Laser, Slow, Buff, Boomerang , Multy, }
-public enum WeaponState { SearchTarget = 0, TryAttackCannon, TryAttackLaser, TryAttackboomerang, TryAttackMulty,}
+public enum WeaponType { Cannon = 0, Multy, Boomerang, Laser, MachinGun, Boomber, Sniper, Bank, Slow, Buff,}
+public enum WeaponState { SearchTarget = 0, TryAttackCannon, TryAttackMulty, TryAttackBoomerang, TryAttackLaser, TryAttackMachinGun, TryAttackBoomber, TryAttackSniper,}
 
 public class TowerWeapon : MonoBehaviour
 {
@@ -15,26 +16,25 @@ public class TowerWeapon : MonoBehaviour
     [Header("Cannon")]
     [SerializeField] private GameObject projectilePrefab;
 
-    [Header("Laser")]
-    [SerializeField] private LineRenderer lineRenderer;
-    [SerializeField] private Transform hitEffect;
-    [SerializeField] private LayerMask targetLayer;
-
-    [Header("Boomerang")]
-    [SerializeField] private GameObject boomerangTemplate;
-    [SerializeField] private Transform boomerangSpawnPoint;    
-
     [Header("Multy")]
     [SerializeField] private GameObject multyProjectilePrefab;
     [SerializeField] private Transform[] multySpawnPoints;
 
-    [Header("Machine gun")]
+    [Header("Boomerang")]
+    [SerializeField] private GameObject boomerangTemplate;
+    [SerializeField] private Transform boomerangSpawnPoint;
+
+    [Header("Laser")]
+    [SerializeField] private LineRenderer lineRenderer;
+    [SerializeField] private Transform hitEffect;
+    [SerializeField] private LayerMask targetLayer;
+    
+    [Header("Machine Gun")]
+    /*[SerializeField] private GameObject*/
 
     [Header("Boomber")]
 
-    [Header("Sniper")]
-
-    [Header("BankTower")]
+    [Header("Sniper")]   
 
 
     private int level = 0;
@@ -48,6 +48,7 @@ public class TowerWeapon : MonoBehaviour
 
     private float addedDamage;
     private int buffLevel;
+
     public Sprite TowerSprite => towerTemplate.weapon[level].sprite;
     public float Damage => towerTemplate.weapon[level].damage;
     public float Rate => towerTemplate.weapon[level].rate;
@@ -58,6 +59,7 @@ public class TowerWeapon : MonoBehaviour
     public int MaxLevel => towerTemplate.weapon.Length;
     public float Slow => towerTemplate.weapon[level].slow;
     public float Buff => towerTemplate.weapon[level].buff;
+    public float Bank => towerTemplate.weapon[level].bank;
     public WeaponType WeaponType => weaponType;
     public float AddedDamage
     {
@@ -127,7 +129,7 @@ public class TowerWeapon : MonoBehaviour
                 }
                 else if(weaponType == WeaponType.Boomerang)
                 {
-                    ChangeState(WeaponState.TryAttackboomerang);
+                    ChangeState(WeaponState.TryAttackBoomerang);
                 }
                 else if(weaponType == WeaponType.Multy)
                 {

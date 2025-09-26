@@ -12,30 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 883f292bc8261294aa50987a9dcc7cc3, type: 3}
   m_Name: Tower06boomber
   m_EditorClassIdentifier: 
-  towerPrefab: {fileID: 4831909540852046583, guid: 033dd046dd53e084a93084269365c620, type: 3}
-  followTowerPrefab: {fileID: 1464258095567835800, guid: 361bbba28cc705b4eb2cf9db0aa4695f, type: 3}
+  towerPrefab: {fileID: 0}
+  followTowerPrefab: {fileID: 0}
   weapon:
-  - sprite: {fileID: 21300000, guid: ba478fac29bb52b4ea366131141c81d0, type: 3}
+  - sprite: {fileID: 21300000, guid: c5e2c57ca4502b245ae2a108e59585f8, type: 3}
     damage: 0
     slow: 0
-    buff: 0.3
+    buff: 0
+    bank: 0
     rate: 0
-    range: 2
-    cost: 600
-    sell: 400
-  - sprite: {fileID: 21300000, guid: ab5d8102ad1a47e4da4c9f607d3212b0, type: 3}
+    range: 0
+    cost: 0
+    sell: 0
+  - sprite: {fileID: 21300000, guid: 88ac5a0e62e0f934b907b23ee7687850, type: 3}
     damage: 0
     slow: 0
-    buff: 0.7
+    buff: 0
+    bank: 0
     rate: 0
-    range: 2
-    cost: 1000
-    sell: 700
-  - sprite: {fileID: 21300000, guid: 0db8822d2b14b0745b7130ada82fc8ce, type: 3}
+    range: 0
+    cost: 0
+    sell: 0
+  - sprite: {fileID: 21300000, guid: 422a3974d2907c441a84eea8ffcfe443, type: 3}
     damage: 0
     slow: 0
-    buff: 1
+    buff: 0
+    bank: 0
     rate: 0
-    range: 2
-    cost: 1700
-    sell: 1000
+    range: 0
+    cost: 0
+    sell: 0
