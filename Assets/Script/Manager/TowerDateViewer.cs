@@ -42,7 +42,7 @@ public class TowerDataViewer : MonoBehaviour
     }
     private void UpdateTowerData()
     {
-        if (currentTower.WeaponType == WeaponType.Cannon || currentTower.WeaponType == WeaponType.Laser)
+        if (currentTower.WeaponType == WeaponType.Cannon || currentTower.WeaponType == WeaponType.Laser || currentTower.WeaponType == WeaponType.Boomerang || currentTower.WeaponType == WeaponType.MachinGun || currentTower.WeaponType == WeaponType.Boomber || currentTower.WeaponType == WeaponType.Sniper)
         {
             imageTower.rectTransform.sizeDelta = new Vector2(88, 59);
             textDamage.text = "Damage : " + currentTower.Damage + "+" + "<color=green>" + currentTower.AddedDamage.ToString("F1") + "</color>";
@@ -58,7 +58,11 @@ public class TowerDataViewer : MonoBehaviour
             {
                 textDamage.text = "Buff : " + currentTower.Buff * 100 + "%";
             }
-            
+            else if(currentTower.WeaponType == WeaponType.Bank)
+            {
+                textDamage.text = "Bank : " + currentTower.Bank * 100 + "%";
+            }          
+
         }
 
         imageTower.sprite = currentTower.TowerSprite;

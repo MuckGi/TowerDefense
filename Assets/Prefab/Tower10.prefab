@@ -4962,7 +4962,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad7b9c4b4b466f4409d35b1c73fe55f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerTemplate: {fileID: 11400000, guid: 4e9fd174c1681e4498a45d0b60dc7587, type: 2}
+  towerTemplate: {fileID: 11400000, guid: 3e5ec9050a358db4cab7d4decfcc064b, type: 2}
   spawnPoint: {fileID: 0}
   weaponType: 9
   projectilePrefab: {fileID: 0}

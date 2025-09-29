@@ -341,7 +341,7 @@ public class TowerWeapon : MonoBehaviour
     {
         if (towerTemplate == null) return;
 
-        if (towerTemplate.name.Contains("Tower03")|| towerTemplate.name.Contains("Tower04"))
+        if (towerTemplate.name.Contains("Tower08")|| towerTemplate.name.Contains("Tower09")|| towerTemplate.name.Contains("Tower10"))
         {
             Transform head = transform.Find("Head");
 
