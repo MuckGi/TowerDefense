@@ -119,7 +119,7 @@ public class TowerWeapon : MonoBehaviour
 
             if(attackTarget != null)
             {
-                if(weaponType ==WeaponType.Cannon)
+                if(weaponType == WeaponType.Cannon)
                 {
                     ChangeState(WeaponState.TryAttackCannon);
                 }
@@ -134,6 +134,18 @@ public class TowerWeapon : MonoBehaviour
                 else if(weaponType == WeaponType.Multy)
                 {
                     ChangeState(WeaponState.TryAttackMulty);
+                }
+                else if (weaponType == WeaponType.Boomber)
+                {
+                    ChangeState(WeaponState.TryAttackBoomber);
+                }
+                else if (weaponType == WeaponType.Sniper)
+                {
+                    ChangeState(WeaponState.TryAttackSniper);
+                }
+                else if (weaponType == WeaponType.MachinGun)
+                {
+                    ChangeState(WeaponState.TryAttackMachinGun);
                 }
             }
             
@@ -184,25 +196,8 @@ public class TowerWeapon : MonoBehaviour
 
             SpawnBooemrang();            
         }
-    }
-    private IEnumerator TryAttackMulty()
-    {
-        while (true)
-        {
-            if (IsPossibleToAttackTarget() == false)
-            {
-                ChangeState(WeaponState.SearchTarget);
-                break;
-            }
-            yield return new WaitForSeconds(towerTemplate.weapon[level].rate);
-            for(int i =0; i< multySpawnPoints.Length; ++i)
-            {
-                GameObject clone = Instantiate(multyProjectilePrefab, multySpawnPoints[i].position, Quaternion.identity);
-                float damage = towerTemplate.weapon[level].damage + AddedDamage;
-                clone.GetComponent<ProjectTile>().Setup(attackTarget, towerTemplate.weapon[level].damage);
-            }            
-        }
-    }
+    } 
+    
     private void SpawnBooemrang()
     {
         GameObject clone = Instantiate(boomerangTemplate, boomerangSpawnPoint.position, Quaternion.identity);
@@ -226,8 +221,7 @@ public class TowerWeapon : MonoBehaviour
                 {
                     weapon.AddedDamage = weapon.Damage * (towerTemplate.weapon[level].buff);
                     weapon.BuffLevel = Level;
-                }
-                
+                }                
             }
         }
     }

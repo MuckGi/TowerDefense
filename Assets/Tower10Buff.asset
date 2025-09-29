@@ -30,7 +30,7 @@ MonoBehaviour:
     buff: 0.7
     bank: 0
     rate: 0
-    range: 0
+    range: 2
     cost: 1000
     sell: 700
   - sprite: {fileID: 21300000, guid: 0db8822d2b14b0745b7130ada82fc8ce, type: 3}

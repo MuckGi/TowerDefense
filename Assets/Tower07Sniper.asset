@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 883f292bc8261294aa50987a9dcc7cc3, type: 3}
   m_Name: Tower07Sniper
   m_EditorClassIdentifier: 
-  towerPrefab: {fileID: 0}
-  followTowerPrefab: {fileID: 0}
+  towerPrefab: {fileID: 6705481666041302432, guid: 742779685eefcf343aa081e8b5f0860b, type: 3}
+  followTowerPrefab: {fileID: 1464258095567835800, guid: cb8e18642932c8d4fbc847880d44def3, type: 3}
   weapon:
   - sprite: {fileID: 21300000, guid: 853e9296af30e564982c507d35e6a063, type: 3}
     damage: 0
