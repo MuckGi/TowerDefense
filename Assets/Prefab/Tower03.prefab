@@ -105,13 +105,14 @@ MonoBehaviour:
   projectilePrefab: {fileID: 0}
   multyProjectilePrefab: {fileID: 0}
   multySpawnPoints: []
-  boomerangTemplate: {fileID: 0}
-  boomerangSpawnPoint: {fileID: 0}
+  boomerangSpawnPoint: {fileID: 3948602033682493350}
   lineRenderer: {fileID: 0}
   hitEffect: {fileID: 0}
   targetLayer:
     serializedVersion: 2
     m_Bits: 0
+  boomberProjectilePrefab: {fileID: 0}
+  boomerExplosionPrefab: {fileID: 0}
 --- !u!65 &68964352933227023
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -42,7 +42,7 @@ public class TowerDataViewer : MonoBehaviour
     }
     private void UpdateTowerData()
     {
-        if (currentTower.WeaponType == WeaponType.Cannon || currentTower.WeaponType == WeaponType.Laser ||  currentTower.WeaponType == WeaponType.MachinGun || currentTower.WeaponType == WeaponType.Boomber || currentTower.WeaponType == WeaponType.Multy)
+        if (currentTower.WeaponType == WeaponType.Cannon || currentTower.WeaponType == WeaponType.Laser || currentTower.WeaponType == WeaponType.MachinGun || currentTower.WeaponType == WeaponType.Boomber || currentTower.WeaponType == WeaponType.Multy || currentTower.WeaponType == WeaponType.Sniper)
         {
             imageTower.rectTransform.sizeDelta = new Vector2(68, 59);
             textDamage.text = "Damage : " + currentTower.Damage + "+" + "<color=green>" + currentTower.AddedDamage.ToString("F1") + "</color>";

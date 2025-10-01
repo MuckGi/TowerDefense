@@ -7,6 +7,7 @@ public class TowerTemplate : ScriptableObject
 {
     public GameObject towerPrefab;
     public GameObject followTowerPrefab;
+    public GameObject[] boomerangProjectilePrefabs;
     public Weapon[] weapon;
 
     [System.Serializable]
@@ -18,6 +19,7 @@ public class TowerTemplate : ScriptableObject
         public float buff;
         public float bank;
         public float rate;
+        public float rateBuff;
         public float range;
         public int cost;
         public int sell;
