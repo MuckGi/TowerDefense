@@ -3,7 +3,6 @@ using System.Collections;
 using System.Diagnostics;
 using System.IO;
 using System.Runtime.InteropServices;
-using System.Security.Cryptography;
 using UnityEngine;
 
 public enum WeaponType { Cannon = 0, Multy, Boomerang, Laser, MachinGun, Boomber, Sniper, Bank, Slow, Buff,}
@@ -298,7 +297,7 @@ public class TowerWeapon : MonoBehaviour
         var boomerang = clone.GetComponent<Boomerang>();
         if (boomerang != null)
         {
-            boomerang.Setup(attackTarget, Damage, 1f / Rate, Range); 
+            boomerang.Setup(attackTarget, Damage, Rate, Range); 
         }
     }
     private void SpawnBoomberProjectile()
