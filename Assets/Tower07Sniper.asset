@@ -12,30 +12,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 883f292bc8261294aa50987a9dcc7cc3, type: 3}
   m_Name: Tower07Sniper
   m_EditorClassIdentifier: 
-  towerPrefab: {fileID: 0}
-  followTowerPrefab: {fileID: 0}
+  towerPrefab: {fileID: 6705481666041302432, guid: 742779685eefcf343aa081e8b5f0860b, type: 3}
+  followTowerPrefab: {fileID: 1464258095567835800, guid: cb8e18642932c8d4fbc847880d44def3, type: 3}
+  boomerangProjectilePrefabs: []
   weapon:
-  - sprite: {fileID: 0}
-    damage: 0
+  - sprite: {fileID: 21300000, guid: 853e9296af30e564982c507d35e6a063, type: 3}
+    damage: 60
     slow: 0
     buff: 0
-    rate: 0
-    range: 0
-    cost: 0
-    sell: 0
-  - sprite: {fileID: 0}
-    damage: 0
+    bank: 0
+    rate: 3
+    rateBuff: 0
+    range: 6
+    cost: 350
+    sell: 175
+  - sprite: {fileID: 21300000, guid: 96b3264d3960e6843b888e7abf9ce8da, type: 3}
+    damage: 120
     slow: 0
     buff: 0
-    rate: 0
-    range: 0
-    cost: 0
-    sell: 0
-  - sprite: {fileID: 0}
-    damage: 0
+    bank: 0
+    rate: 2.7
+    rateBuff: 0
+    range: 7
+    cost: 650
+    sell: 500
+  - sprite: {fileID: 21300000, guid: 52b009441e0c0e54e9a626c6f5fd8412, type: 3}
+    damage: 200
     slow: 0
     buff: 0
-    rate: 0
-    range: 0
-    cost: 0
-    sell: 0
+    bank: 0
+    rate: 2.5
+    rateBuff: 0
+    range: 8
+    cost: 900
+    sell: 950

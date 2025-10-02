@@ -7,8 +7,6 @@ TagManager:
   - Tile
   - Enemy
   - Tower
-  - Tower03
-  - Tower04
   - Arrow
   layers:
   - Default

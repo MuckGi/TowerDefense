@@ -14,28 +14,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   towerPrefab: {fileID: 6340823304075467857, guid: 7ba667b49a41cbd49bc608bd20355a49, type: 3}
   followTowerPrefab: {fileID: 1464258095567835800, guid: 1e4ebe86f274daa4595e012c65cd1519, type: 3}
+  boomerangProjectilePrefabs: []
   weapon:
   - sprite: {fileID: 21300000, guid: 34406cc88ff52ed4ca4964cb5cda4a40, type: 3}
-    damage: 1.5
+    damage: 12
     slow: 0
     buff: 0
+    bank: 0
     rate: 0
+    rateBuff: 0
     range: 3
     cost: 200
     sell: 100
   - sprite: {fileID: 21300000, guid: 3a20674e2eacf1747b60ebdb6f69f625, type: 3}
-    damage: 3
+    damage: 25
     slow: 0
     buff: 0
+    bank: 0
     rate: 0
+    rateBuff: 0
     range: 3
     cost: 350
-    sell: 150
+    sell: 275
   - sprite: {fileID: 21300000, guid: 94e48a4aeeede5b44b00e0a2fc60eaf6, type: 3}
-    damage: 5
+    damage: 40
     slow: 0
     buff: 0
+    bank: 0
     rate: 0
+    rateBuff: 0
     range: 5
-    cost: 400
-    sell: 200
+    cost: 500
+    sell: 525

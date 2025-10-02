@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6e92cb909b5e3f94b93e628b6e35ef70, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2f9e9373607512b41bd6af18423c211c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4962,10 +4962,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad7b9c4b4b466f4409d35b1c73fe55f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerTemplate: {fileID: 11400000, guid: 4e9fd174c1681e4498a45d0b60dc7587, type: 2}
+  towerTemplate: {fileID: 11400000, guid: 3e5ec9050a358db4cab7d4decfcc064b, type: 2}
   spawnPoint: {fileID: 0}
-  weaponType: 3
+  weaponType: 9
   projectilePrefab: {fileID: 0}
+  multyProjectilePrefab: {fileID: 0}
+  multySpawnPoints: []
+  boomerangTemplate: {fileID: 0}
+  boomerangSpawnPoint: {fileID: 0}
   lineRenderer: {fileID: 0}
   hitEffect: {fileID: 0}
   targetLayer:
