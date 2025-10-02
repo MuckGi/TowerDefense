@@ -12437,6 +12437,7 @@ MonoBehaviour:
     maxEnemyCount: 15
     enemyPrefabs:
     - {fileID: 8561762829633110547, guid: 2f65444249edf27438ccf7e28350c1d9, type: 3}
+    - {fileID: 8561762829633110547, guid: d4e95c347cc46f8479f689d2163a2bf7, type: 3}
   - spawnTime: 0.8
     maxEnemyCount: 15
     enemyPrefabs:
